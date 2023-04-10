@@ -1,0 +1,7 @@
+<p>parent works!</p>
+
+<h3> {{ received }} </h3>
+
+<hr/>
+
+<app-child [receivedContent]="name" (myEvent)="eventOccurs($event)"></app-child>

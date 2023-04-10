@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<!-- 
+  Routing steps:
+
+  1) app-routing.module.ts => path
+  2) sidebar <a routerLink="path"
+  3) <router-outlet> -- part which changes on click
+ -->

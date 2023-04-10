@@ -1,0 +1,42 @@
+<!-- <p>reactiveform works!</p>
+
+angular forms:- 
+
+1) template driven form: [(ngModel)]="variable"
+2) reactive form: formControlName="variable"
+
+-->
+
+<form action="" class="form w-50" [formGroup]="registerForm" (ngSubmit)="onFormSubmit(registerForm)">
+    <div class="form-group">
+        <label for="">Enter first name:</label>
+        <input type="text" class="form-control" formControlName="firstName">
+    </div>
+    <p class="text-danger" *ngIf="issubmitted && registerForm.controls['firstName'].errors"></p>
+
+    <div class="form-group">
+        <label for="">Enter Last name:</label>
+        <input type="text" class="form-control" formControlName="lastName">
+    </div>
+    <p class="text-danger" *ngIf="issubmitted && registerForm.controls['lastName'].errors"></p>
+
+    <div class="form-group">
+        <label for="">Enter Contact:</label>
+        <input type="tel" class="form-control" formControlName="contact">
+    </div>
+    <p class="text-danger" *ngIf="issubmitted && registerForm.controls['contact'].errors"></p>
+
+    <div class="form-group">
+        <label for="">Enter Email:</label>
+        <input type="email" class="form-control" formControlName="email">
+    </div>
+    <p class="text-danger" *ngIf="issubmitted && registerForm.controls['email'].errors"></p>
+
+    <div class="form-group">
+        <label for="">Enter Password:</label>
+        <input type="password" class="form-control" formControlName="password">
+    </div>
+    <p class="text-danger" *ngIf="issubmitted && registerForm.controls['password'].errors"></p>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+</form>

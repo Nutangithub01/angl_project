@@ -1,0 +1,5 @@
+<button class="btn btn-warning" (click)="toggle()">Toggle</button>
+
+<div [@openclose] = "isOpen?'open':'close'">
+    This box is {{ isOpen ? "Open" : "Closed"}}.
+</div>

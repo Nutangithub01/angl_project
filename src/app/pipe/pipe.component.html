@@ -1,0 +1,37 @@
+<p>pipe works!</p>
+
+
+<!-- pipe: changed on UI
+
+
+-->
+
+<h3>Upper case</h3>
+<p>{{ name|uppercase}}</p>
+
+<h3>Lower case</h3>
+<p>{{ name|lowercase}}</p>
+
+<h3>Date pipes</h3>
+<p>{{1676119338|date:"dd-mm-yyyy hh:mm:ss a"}}</p>
+
+<h3>Decimal pipe</h3>
+<p>{{ 3.151511511|number:"1.2"}}</p>
+
+<h3>Decimal pipe</h3>
+<p>{{ 3.151511511|number:"1.2-2"}}</p>
+
+
+<!-- same as stringify method -->
+<h3>JSON pipe</h3>
+<p>{{ user|json}}</p>
+
+<!-- start end= end -1 -->
+<h3>slice pipe</h3>
+<p>{{ arr|slice:2:6}}</p>
+
+<h3>percent pipe</h3>
+<p>{{ 0.75|percent}}</p>
+
+<h3>sqrt pipe</h3>
+<p>{{ 25|sqrt }}</p>
